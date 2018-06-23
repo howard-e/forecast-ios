@@ -15,6 +15,10 @@
 		891A5F7920DDDA2A00E6FDBA /* ForecastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891A5F7820DDDA2A00E6FDBA /* ForecastTests.swift */; };
 		891A5F8420DDDA2A00E6FDBA /* ForecastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891A5F8320DDDA2A00E6FDBA /* ForecastUITests.swift */; };
 		89BFC3F720DDE1EC00A76F25 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89BFC3F620DDE1EC00A76F25 /* GoogleService-Info.plist */; };
+		89BFC3FD20DDE55A00A76F25 /* ProximaNova-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89BFC3F920DDE55900A76F25 /* ProximaNova-Light.otf */; };
+		89BFC3FE20DDE55A00A76F25 /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89BFC3FA20DDE55900A76F25 /* ProximaNova-Regular.otf */; };
+		89BFC3FF20DDE55A00A76F25 /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89BFC3FB20DDE55900A76F25 /* ProximaNova-Bold.otf */; };
+		89BFC40020DDE55A00A76F25 /* ProximaNova-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89BFC3FC20DDE55A00A76F25 /* ProximaNova-Semibold.otf */; };
 		89FAD0D770DC2F0FCCAAFB72 /* Pods_Forecast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A56F2927A7643EBAB19735 /* Pods_Forecast.framework */; };
 		8EFAB5305E48B1D937AD63EA /* Pods_ForecastUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D9B259A995C5571419993CE /* Pods_ForecastUITests.framework */; };
 		E6F064C9F92472D09369E58C /* Pods_ForecastTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C78B3531B70CC2F6E1F79E1 /* Pods_ForecastTests.framework */; };
@@ -56,6 +60,10 @@
 		891A5F8320DDDA2A00E6FDBA /* ForecastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastUITests.swift; sourceTree = "<group>"; };
 		891A5F8520DDDA2B00E6FDBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89BFC3F620DDE1EC00A76F25 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		89BFC3F920DDE55900A76F25 /* ProximaNova-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Light.otf"; sourceTree = "<group>"; };
+		89BFC3FA20DDE55900A76F25 /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+		89BFC3FB20DDE55900A76F25 /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.otf"; sourceTree = "<group>"; };
+		89BFC3FC20DDE55A00A76F25 /* ProximaNova-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Semibold.otf"; sourceTree = "<group>"; };
 		9D9B259A995C5571419993CE /* Pods_ForecastUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForecastUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF0D14A44409256A4172AAED /* Pods-Forecast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Forecast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Forecast/Pods-Forecast.debug.xcconfig"; sourceTree = "<group>"; };
 		B2AB7903BE4B784CDBC04DE0 /* Pods-ForecastUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastUITests/Pods-ForecastUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -194,6 +202,10 @@
 		89BFC3F420DDE0A200A76F25 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				89BFC3FB20DDE55900A76F25 /* ProximaNova-Bold.otf */,
+				89BFC3F920DDE55900A76F25 /* ProximaNova-Light.otf */,
+				89BFC3FA20DDE55900A76F25 /* ProximaNova-Regular.otf */,
+				89BFC3FC20DDE55A00A76F25 /* ProximaNova-Semibold.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -316,10 +328,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89BFC3FD20DDE55A00A76F25 /* ProximaNova-Light.otf in Resources */,
 				891A5F6E20DDDA2A00E6FDBA /* LaunchScreen.storyboard in Resources */,
+				89BFC3FF20DDE55A00A76F25 /* ProximaNova-Bold.otf in Resources */,
 				89BFC3F720DDE1EC00A76F25 /* GoogleService-Info.plist in Resources */,
 				891A5F6B20DDDA2A00E6FDBA /* Assets.xcassets in Resources */,
 				891A5F6920DDDA2900E6FDBA /* Main.storyboard in Resources */,
+				89BFC3FE20DDE55A00A76F25 /* ProximaNova-Regular.otf in Resources */,
+				89BFC40020DDE55A00A76F25 /* ProximaNova-Semibold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
