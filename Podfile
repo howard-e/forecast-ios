@@ -10,7 +10,7 @@ target 'Forecast' do
   pod 'SwiftyJSON', '~> 4.0'
   pod 'SwiftEventBus', :tag => '3.0.0', :git => 'https://github.com/cesarferreira/SwiftEventBus.git'
 
-  # pod 'NVActivityIndicatorView'
+  pod 'NVActivityIndicatorView'
 
   pod 'RealmSwift'
 

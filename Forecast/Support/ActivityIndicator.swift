@@ -7,9 +7,9 @@
 //
 
 import UIKit
-//import NVActivityIndicatorView
+import NVActivityIndicatorView
 
-class ActivityIndicator: UIViewController/*, NVActivityIndicatorViewable*/ {
+class ActivityIndicator: UIViewController, NVActivityIndicatorViewable {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -17,14 +17,14 @@ class ActivityIndicator: UIViewController/*, NVActivityIndicatorViewable*/ {
 	
 	func showActivityIndicator() {
 		UIApplication.shared.isNetworkActivityIndicatorVisible = true
-		//NVActivityIndicatorView.DEFAULT_TYPE = .ballScaleMultiple
-		//startAnimating()
+		NVActivityIndicatorView.DEFAULT_TYPE = .ballScaleMultiple
+		self.startAnimating()
 	}
 	
 	func hideActivityIndicator() {
 		DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
 			UIApplication.shared.isNetworkActivityIndicatorVisible = false
-			//stopAnimating()
+			self.stopAnimating()
 		}
 	}
 }

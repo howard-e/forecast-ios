@@ -10,21 +10,71 @@ import UIKit
 
 class ForecastViewController: UIViewController {
 
-    override func viewDidLoad() {
+	@IBOutlet weak var locationLabel: UILabel!
+	@IBOutlet weak var forecastTableView: UITableView!
+	
+	override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+		setUp()
     }
-    
+	
+	func setUp() {
+		// TODO: Display user's current location
+		
+		// Set up tableview
+		forecastTableView.register(UINib(nibName: XibCells.forecastCell, bundle: nil), forCellReuseIdentifier: CellIdentifiers.forecastCell)
+		forecastTableView.register(UINib(nibName: XibCells.customHeaderCell, bundle: nil), forCellReuseIdentifier: CellIdentifiers.customHeaderCell)
+		
+		forecastTableView.delegate = self
+		forecastTableView.dataSource = self
+		forecastTableView.rowHeight = 150
+		forecastTableView.estimatedRowHeight = 150
+	}
+}
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+// MARK :- UITableViewDataSource Methods
+extension ForecastViewController: UITableViewDataSource {
+	
+	func numberOfSections(in tableView: UITableView) -> Int {
+		return 4
+	}
+	
+	func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+		let  headerCell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.customHeaderCell) as! CustomHeaderTableViewCell
+		
+		switch (section) {
+		case 0:
+			headerCell.headerTextLabel.text = "Today".uppercased()
+		case 1:
+			headerCell.headerTextLabel.text = "Tomorrow".uppercased()
+		default:
+			headerCell.headerTextLabel.text = "Future".uppercased()
+		}
+		
+		return headerCell
+	}
+	
+	func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+		return 50
+	}
+	
+	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		return 5
+	}
+	
+	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.forecastCell, for: indexPath) as! ForecastTableViewCell
+		
+		return cell
+	}
+}
 
+
+// MARK :- UITableViewDataDelegate Methods
+extension ForecastViewController: UITableViewDelegate {
+	
+	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+		return UITableViewAutomaticDimension
+	}
 }

@@ -19,6 +19,13 @@ extension UIViewController {
 	}
 }
 
+extension UIView {
+	func roundEdges(radius: CGFloat = 2.0) {
+		self.layer.masksToBounds = true
+		self.layer.cornerRadius = radius
+	}
+}
+
 extension UIColor {
 	convenience init(red: Int, green: Int, blue: Int) {
 		assert(red >= 0 && red <= 255, "Invalid red component")

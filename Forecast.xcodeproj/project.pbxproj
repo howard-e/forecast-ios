@@ -16,6 +16,12 @@
 		891A5F8420DDDA2A00E6FDBA /* ForecastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891A5F8320DDDA2A00E6FDBA /* ForecastUITests.swift */; };
 		89325BDD20DDECDB00DE7E89 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89325BDC20DDECDB00DE7E89 /* Extensions.swift */; };
 		89325BDF20DE038600DE7E89 /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89325BDE20DE038600DE7E89 /* ForecastViewController.swift */; };
+		89325BE420DE074000DE7E89 /* ForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89325BE220DE074000DE7E89 /* ForecastTableViewCell.swift */; };
+		89325BE520DE074000DE7E89 /* ForecastTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89325BE320DE074000DE7E89 /* ForecastTableViewCell.xib */; };
+		89614D8D20DE1476008CD8BF /* ForecastHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89614D8C20DE1476008CD8BF /* ForecastHeaderView.xib */; };
+		897CD26E20DE95ED006CAAC5 /* CustomHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897CD26C20DE95ED006CAAC5 /* CustomHeaderTableViewCell.swift */; };
+		897CD26F20DE95ED006CAAC5 /* CustomHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 897CD26D20DE95ED006CAAC5 /* CustomHeaderTableViewCell.xib */; };
+		897CD27120DE9E72006CAAC5 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897CD27020DE9E72006CAAC5 /* OnboardingViewController.swift */; };
 		89BFC3F720DDE1EC00A76F25 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89BFC3F620DDE1EC00A76F25 /* GoogleService-Info.plist */; };
 		89BFC3FD20DDE55A00A76F25 /* ProximaNova-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89BFC3F920DDE55900A76F25 /* ProximaNova-Light.otf */; };
 		89BFC3FE20DDE55A00A76F25 /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89BFC3FA20DDE55900A76F25 /* ProximaNova-Regular.otf */; };
@@ -68,6 +74,12 @@
 		891A5F8520DDDA2B00E6FDBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89325BDC20DDECDB00DE7E89 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		89325BDE20DE038600DE7E89 /* ForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
+		89325BE220DE074000DE7E89 /* ForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTableViewCell.swift; sourceTree = "<group>"; };
+		89325BE320DE074000DE7E89 /* ForecastTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForecastTableViewCell.xib; sourceTree = "<group>"; };
+		89614D8C20DE1476008CD8BF /* ForecastHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForecastHeaderView.xib; sourceTree = "<group>"; };
+		897CD26C20DE95ED006CAAC5 /* CustomHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		897CD26D20DE95ED006CAAC5 /* CustomHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		897CD27020DE9E72006CAAC5 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		89BFC3F620DDE1EC00A76F25 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		89BFC3F920DDE55900A76F25 /* ProximaNova-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Light.otf"; sourceTree = "<group>"; };
 		89BFC3FA20DDE55900A76F25 /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
@@ -183,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				89325BE120DE06DF00DE7E89 /* Cells */,
+				89614D8C20DE1476008CD8BF /* ForecastHeaderView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -190,6 +203,10 @@
 		89325BE120DE06DF00DE7E89 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				89325BE220DE074000DE7E89 /* ForecastTableViewCell.swift */,
+				89325BE320DE074000DE7E89 /* ForecastTableViewCell.xib */,
+				897CD26C20DE95ED006CAAC5 /* CustomHeaderTableViewCell.swift */,
+				897CD26D20DE95ED006CAAC5 /* CustomHeaderTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -199,6 +216,7 @@
 			children = (
 				89325BDE20DE038600DE7E89 /* ForecastViewController.swift */,
 				891A5F6520DDDA2900E6FDBA /* TodayViewController.swift */,
+				897CD27020DE9E72006CAAC5 /* OnboardingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -374,10 +392,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				89BFC3FD20DDE55A00A76F25 /* ProximaNova-Light.otf in Resources */,
+				89614D8D20DE1476008CD8BF /* ForecastHeaderView.xib in Resources */,
 				891A5F6E20DDDA2A00E6FDBA /* LaunchScreen.storyboard in Resources */,
 				89BFC3FF20DDE55A00A76F25 /* ProximaNova-Bold.otf in Resources */,
 				89BFC3F720DDE1EC00A76F25 /* GoogleService-Info.plist in Resources */,
 				891A5F6B20DDDA2A00E6FDBA /* Assets.xcassets in Resources */,
+				89325BE520DE074000DE7E89 /* ForecastTableViewCell.xib in Resources */,
+				897CD26F20DE95ED006CAAC5 /* CustomHeaderTableViewCell.xib in Resources */,
 				891A5F6920DDDA2900E6FDBA /* Main.storyboard in Resources */,
 				89BFC3FE20DDE55A00A76F25 /* ProximaNova-Regular.otf in Resources */,
 				89BFC40020DDE55A00A76F25 /* ProximaNova-Semibold.otf in Resources */,
@@ -430,6 +451,7 @@
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
@@ -448,6 +470,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
@@ -514,9 +537,12 @@
 				89BFC40420DDE7B200A76F25 /* DataUtils.swift in Sources */,
 				89325BDD20DDECDB00DE7E89 /* Extensions.swift in Sources */,
 				89BFC40C20DDEAB400A76F25 /* Utils.swift in Sources */,
+				89325BE420DE074000DE7E89 /* ForecastTableViewCell.swift in Sources */,
+				897CD27120DE9E72006CAAC5 /* OnboardingViewController.swift in Sources */,
 				891A5F6420DDDA2900E6FDBA /* AppDelegate.swift in Sources */,
 				89BFC40A20DDEA2700A76F25 /* ActivityIndicator.swift in Sources */,
 				89BFC40620DDE7C600A76F25 /* Constants.swift in Sources */,
+				897CD26E20DE95ED006CAAC5 /* CustomHeaderTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -700,7 +726,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.heed.Forecast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -720,7 +746,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.heed.Forecast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
