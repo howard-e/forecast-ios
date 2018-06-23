@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.14" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sfH-Ml-r1Y">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.14" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Al5-Mc-YQ6">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="ProximaNova-Light.otf">
+            <string>ProximaNova-Light</string>
+        </array>
         <array key="ProximaNova-Regular.otf">
             <string>ProximaNova-Regular</string>
         </array>
@@ -18,6 +21,77 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="rUO-UH-0zx">
+            <objects>
+                <viewController id="Al5-Mc-YQ6" customClass="OnboardingViewController" customModule="Forecast" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hVo-tZ-m0P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A9T-Oz-yQs" userLabel="Content View">
+                                <rect key="frame" x="0.0" y="44" width="375" height="768"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashIcon" translatesAutoresizingMaskIntoConstraints="NO" id="foV-fS-xXG">
+                                        <rect key="frame" x="0.0" y="117" width="375" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="KcW-pa-g4O"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B8a-h6-XIO">
+                                        <rect key="frame" x="37.666666666666657" y="299" width="300" height="108"/>
+                                        <string key="text">Forecast needs your location to work properly work. Could you allow this permission please? We're not doing anything bad. 
+
+Promise. 😇</string>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFV-Ut-Gu9">
+                                        <rect key="frame" x="37.666666666666657" y="696" width="300" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="lU0-lB-yvm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="20"/>
+                                        <state key="normal" title="CONTINUE">
+                                            <color key="titleColor" red="1" green="0.53333333329999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="requestLocationPermission:" destination="Al5-Mc-YQ6" eventType="touchUpInside" id="Vru-dT-PTJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="PFV-Ut-Gu9" secondAttribute="bottom" constant="32" id="0og-Zg-GLy"/>
+                                    <constraint firstItem="B8a-h6-XIO" firstAttribute="centerX" secondItem="A9T-Oz-yQs" secondAttribute="centerX" id="1hM-VL-T1g"/>
+                                    <constraint firstItem="B8a-h6-XIO" firstAttribute="top" secondItem="foV-fS-xXG" secondAttribute="bottom" constant="32" id="AYi-Pd-Ijg"/>
+                                    <constraint firstItem="PFV-Ut-Gu9" firstAttribute="centerX" secondItem="A9T-Oz-yQs" secondAttribute="centerX" id="DyH-u1-P02"/>
+                                    <constraint firstItem="foV-fS-xXG" firstAttribute="centerX" secondItem="A9T-Oz-yQs" secondAttribute="centerX" id="EXr-EG-Ea5"/>
+                                    <constraint firstItem="foV-fS-xXG" firstAttribute="width" secondItem="A9T-Oz-yQs" secondAttribute="width" id="VjO-mH-ocr"/>
+                                    <constraint firstItem="foV-fS-xXG" firstAttribute="centerY" secondItem="A9T-Oz-yQs" secondAttribute="centerY" multiplier="0.5" id="XPu-v8-fDt"/>
+                                    <constraint firstItem="PFV-Ut-Gu9" firstAttribute="width" secondItem="A9T-Oz-yQs" secondAttribute="width" multiplier="0.8" id="Z6f-ka-Koq"/>
+                                    <constraint firstItem="B8a-h6-XIO" firstAttribute="width" secondItem="A9T-Oz-yQs" secondAttribute="width" multiplier="0.8" id="aYQ-9d-Dpk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="A9T-Oz-yQs" firstAttribute="top" secondItem="1vr-M6-QV9" secondAttribute="top" id="9SE-s8-yxS"/>
+                            <constraint firstItem="A9T-Oz-yQs" firstAttribute="trailing" secondItem="1vr-M6-QV9" secondAttribute="trailing" id="HGI-Yp-5DM"/>
+                            <constraint firstItem="1vr-M6-QV9" firstAttribute="bottom" secondItem="A9T-Oz-yQs" secondAttribute="bottom" id="aCa-UZ-fNa"/>
+                            <constraint firstItem="A9T-Oz-yQs" firstAttribute="leading" secondItem="1vr-M6-QV9" secondAttribute="leading" id="h35-Pk-o1J"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1vr-M6-QV9"/>
+                    </view>
+                    <connections>
+                        <outlet property="continueButton" destination="PFV-Ut-Gu9" id="uyf-ET-dEo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="khX-ub-H6u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2308" y="-60.591133004926114"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="jqb-mW-grD">
             <objects>
@@ -270,7 +344,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Today" image="TodayInactiveTab" selectedImage="TodayActiveTab" id="AmB-xj-hx5"/>
                     <connections>
-                        <outlet property="currentLocationButton" destination="R7K-r3-bnT" id="GG5-Cf-qhU"/>
                         <outlet property="humidityLabel" destination="8Qb-XQ-LGS" id="6LD-hW-QXj"/>
                         <outlet property="precipitationLabel" destination="TQB-2K-ejD" id="f7M-VF-Hgf"/>
                         <outlet property="pressureLabel" destination="gbc-Jb-b58" id="8Pc-eo-cVv"/>
@@ -296,7 +369,7 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="719"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIn-rF-ex8">
-                                        <rect key="frame" x="153.33333333333334" y="0.0" width="68.666666666666657" height="30"/>
+                                        <rect key="frame" x="152.66666666666666" y="0.0" width="70" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="VA4-8j-XRF"/>
                                         </constraints>
@@ -358,6 +431,7 @@
         <image name="Line2px" width="320" height="2"/>
         <image name="PrecipitationOther" width="30" height="30"/>
         <image name="PressureOther" width="30" height="30"/>
+        <image name="SplashIcon" width="512" height="512"/>
         <image name="TodayActiveTab" width="25" height="25"/>
         <image name="TodayInactiveTab" width="25" height="25"/>
         <image name="WindDirectionOther" width="30" height="30"/>

@@ -11,7 +11,6 @@ import UIKit
 class TodayViewController: UIViewController {
 	
 	@IBOutlet weak var weatherStatusIndicatorImageView: UIImageView!
-	@IBOutlet weak var currentLocationButton: UIButton!
 	@IBOutlet weak var temperatureWeatherConditionLabel: UILabel!
 	
 	@IBOutlet weak var humidityLabel: UILabel!
@@ -26,8 +25,7 @@ class TodayViewController: UIViewController {
 	}
 
 	func setUp() {
-		// Views SetUp
-		currentLocationButton.imageView?.contentMode = .scaleAspectFit
+		// Views Set Up
 	}
 	
 	@IBAction func setCurrentLocation(_ sender: Any) {

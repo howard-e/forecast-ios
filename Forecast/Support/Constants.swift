@@ -24,8 +24,10 @@ struct Colors {
 
 struct XibCells {
 	static let forecastCell = "ForecastTableViewCell"
+	static let customHeaderCell = "CustomHeaderTableViewCell"
 }
 
 struct CellIdentifiers {
 	static let forecastCell = "ForecastTableViewCell"
+	static let customHeaderCell = "CustomHeaderTableViewCell"
 }
