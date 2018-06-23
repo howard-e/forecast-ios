@@ -21,3 +21,11 @@ struct Colors {
 	static let textBlue = UIColor(hexString: "#2F91FF")
 	static let textOrange = UIColor(hexString: "#FF8847")
 }
+
+struct XibCells {
+	static let forecastCell = "ForecastTableViewCell"
+}
+
+struct CellIdentifiers {
+	static let forecastCell = "ForecastTableViewCell"
+}

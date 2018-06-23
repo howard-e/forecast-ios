@@ -69,6 +69,9 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - NVActivityIndicatorView (4.2.1):
+    - NVActivityIndicatorView/Presenter (= 4.2.1)
+  - NVActivityIndicatorView/Presenter (4.2.1)
   - Protobuf (3.6.0)
   - Realm (3.7.4):
     - Realm/Headers (= 3.7.4)
@@ -83,6 +86,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Firestore
+  - NVActivityIndicatorView
   - RealmSwift
   - SwiftEventBus (from `https://github.com/cesarferreira/SwiftEventBus.git`, tag `3.0.0`)
   - SwiftyJSON (~> 4.0)
@@ -105,6 +109,7 @@ SPEC REPOS:
     - GTMSessionFetcher
     - leveldb-library
     - nanopb
+    - NVActivityIndicatorView
     - Protobuf
     - Realm
     - RealmSwift
@@ -137,12 +142,13 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  NVActivityIndicatorView: 8068ba3ad39cb44cbaab25d89ff2546b3f092681
   Protobuf: 0fc0ad8bec688b2a3017a139953e01374fedbd5f
   Realm: a469bb59e33f9926102ccaea4349822c53b9117e
   RealmSwift: a45861b21c180f5cf0f122144b9759fa8dde3e9e
   SwiftEventBus: 667baca2f107fa0c9c2068950298dbfd6a4111cc
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: 0de4d779ba351b73f7b52541ebab72c5fc863fab
+PODFILE CHECKSUM: d4eab9ca79d6daee773691f591e89bb9a9077f7d
 
 COCOAPODS: 1.5.3
