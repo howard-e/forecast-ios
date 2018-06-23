@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		891A5F6420DDDA2900E6FDBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891A5F6320DDDA2900E6FDBA /* AppDelegate.swift */; };
-		891A5F6620DDDA2900E6FDBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891A5F6520DDDA2900E6FDBA /* ViewController.swift */; };
+		891A5F6620DDDA2900E6FDBA /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891A5F6520DDDA2900E6FDBA /* TodayViewController.swift */; };
 		891A5F6920DDDA2900E6FDBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891A5F6720DDDA2900E6FDBA /* Main.storyboard */; };
 		891A5F6B20DDDA2A00E6FDBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 891A5F6A20DDDA2A00E6FDBA /* Assets.xcassets */; };
 		891A5F6E20DDDA2A00E6FDBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891A5F6C20DDDA2A00E6FDBA /* LaunchScreen.storyboard */; };
 		891A5F7920DDDA2A00E6FDBA /* ForecastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891A5F7820DDDA2A00E6FDBA /* ForecastTests.swift */; };
 		891A5F8420DDDA2A00E6FDBA /* ForecastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891A5F8320DDDA2A00E6FDBA /* ForecastUITests.swift */; };
+		89BFC3F720DDE1EC00A76F25 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89BFC3F620DDE1EC00A76F25 /* GoogleService-Info.plist */; };
 		89FAD0D770DC2F0FCCAAFB72 /* Pods_Forecast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A56F2927A7643EBAB19735 /* Pods_Forecast.framework */; };
 		8EFAB5305E48B1D937AD63EA /* Pods_ForecastUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D9B259A995C5571419993CE /* Pods_ForecastUITests.framework */; };
 		E6F064C9F92472D09369E58C /* Pods_ForecastTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C78B3531B70CC2F6E1F79E1 /* Pods_ForecastTests.framework */; };
@@ -43,7 +44,7 @@
 		60A93BC4DDD4222F975B5390 /* Pods-ForecastTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastTests/Pods-ForecastTests.release.xcconfig"; sourceTree = "<group>"; };
 		891A5F6020DDDA2900E6FDBA /* Forecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Forecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		891A5F6320DDDA2900E6FDBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		891A5F6520DDDA2900E6FDBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		891A5F6520DDDA2900E6FDBA /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		891A5F6820DDDA2900E6FDBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		891A5F6A20DDDA2A00E6FDBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		891A5F6D20DDDA2A00E6FDBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +55,7 @@
 		891A5F7F20DDDA2A00E6FDBA /* ForecastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForecastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		891A5F8320DDDA2A00E6FDBA /* ForecastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastUITests.swift; sourceTree = "<group>"; };
 		891A5F8520DDDA2B00E6FDBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89BFC3F620DDE1EC00A76F25 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9D9B259A995C5571419993CE /* Pods_ForecastUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForecastUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF0D14A44409256A4172AAED /* Pods-Forecast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Forecast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Forecast/Pods-Forecast.debug.xcconfig"; sourceTree = "<group>"; };
 		B2AB7903BE4B784CDBC04DE0 /* Pods-ForecastUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastUITests/Pods-ForecastUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,11 +130,9 @@
 			isa = PBXGroup;
 			children = (
 				891A5F6320DDDA2900E6FDBA /* AppDelegate.swift */,
-				891A5F6520DDDA2900E6FDBA /* ViewController.swift */,
-				891A5F6720DDDA2900E6FDBA /* Main.storyboard */,
-				891A5F6A20DDDA2A00E6FDBA /* Assets.xcassets */,
-				891A5F6C20DDDA2A00E6FDBA /* LaunchScreen.storyboard */,
-				891A5F6F20DDDA2A00E6FDBA /* Info.plist */,
+				89BFC3F020DDE07100A76F25 /* Controllers */,
+				89BFC3F120DDE08800A76F25 /* Models */,
+				89BFC3F220DDE08C00A76F25 /* Resources */,
 			);
 			path = Forecast;
 			sourceTree = "<group>";
@@ -153,6 +153,49 @@
 				891A5F8520DDDA2B00E6FDBA /* Info.plist */,
 			);
 			path = ForecastUITests;
+			sourceTree = "<group>";
+		};
+		89BFC3F020DDE07100A76F25 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				891A5F6520DDDA2900E6FDBA /* TodayViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		89BFC3F120DDE08800A76F25 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		89BFC3F220DDE08C00A76F25 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				891A5F6A20DDDA2A00E6FDBA /* Assets.xcassets */,
+				89BFC3F420DDE0A200A76F25 /* Fonts */,
+				89BFC3F620DDE1EC00A76F25 /* GoogleService-Info.plist */,
+				891A5F6F20DDDA2A00E6FDBA /* Info.plist */,
+				89BFC3F320DDE09900A76F25 /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		89BFC3F320DDE09900A76F25 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				891A5F6C20DDDA2A00E6FDBA /* LaunchScreen.storyboard */,
+				891A5F6720DDDA2900E6FDBA /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		89BFC3F420DDE0A200A76F25 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		9F75A3C665E87E30D4DEFB6E /* Frameworks */ = {
@@ -274,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				891A5F6E20DDDA2A00E6FDBA /* LaunchScreen.storyboard in Resources */,
+				89BFC3F720DDE1EC00A76F25 /* GoogleService-Info.plist in Resources */,
 				891A5F6B20DDDA2A00E6FDBA /* Assets.xcassets in Resources */,
 				891A5F6920DDDA2900E6FDBA /* Main.storyboard in Resources */,
 			);
@@ -403,7 +447,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				891A5F6620DDDA2900E6FDBA /* ViewController.swift in Sources */,
+				891A5F6620DDDA2900E6FDBA /* TodayViewController.swift in Sources */,
 				891A5F6420DDDA2900E6FDBA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -580,7 +624,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MY8JKC2SMV;
-				INFOPLIST_FILE = Forecast/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Forecast/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -599,7 +644,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MY8JKC2SMV;
-				INFOPLIST_FILE = Forecast/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Forecast/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
