@@ -46,8 +46,8 @@ func getWeatherInfo(controller: UIViewController, params: [String: Any]) {
 
 
 // MARK :- Utility Methods
-func getOpenWeatherMapApiForCurrentLocationEndpoint(latitude lat: String, longitude long: String) -> String {
-	return "\(URLs.OPEN_WEATHER_BASE_API)weather?lat=\(lat)&lon=\(long)&APPID=\(Constants.OPEN_WEATHER_MAP_API_KEY)&units=metric"
+func getOpenWeatherMapApiForCurrentLocationEndpoint(latitude lat: String, longitude lon: String) -> String {
+	return "\(URLs.OPEN_WEATHER_BASE_API)weather?lat=\(lat)&lon=\(lon)&APPID=\(Constants.OPEN_WEATHER_MAP_API_KEY)&units=metric"
 }
 
 func logRequestInfo(_ requestTitle: String, _ requestUrl: String, requestParams: [String: Any]? = nil, headers: HTTPHeaders? = nil) {

@@ -6,7 +6,7 @@
 //  Copyright © 2018 Howard Edwards. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct URLs {
 	static let OPEN_WEATHER_BASE_API = "http://api.openweathermap.org/data/2.5/"
@@ -15,4 +15,9 @@ struct URLs {
 struct Constants {
 	static let SERVER_TIMEOUT = 15.0
 	static let OPEN_WEATHER_MAP_API_KEY = "445c9575570ef9b9b382f8fbe365b67c"
+}
+
+struct Colors {
+	static let textBlue = UIColor(hexString: "#2F91FF")
+	static let textOrange = UIColor(hexString: "#FF8847")
 }

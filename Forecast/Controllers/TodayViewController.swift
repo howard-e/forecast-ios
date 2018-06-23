@@ -9,12 +9,31 @@
 import UIKit
 
 class TodayViewController: UIViewController {
-
+	
+	@IBOutlet weak var weatherStatusIndicatorImageView: UIImageView!
+	@IBOutlet weak var currentLocationButton: UIButton!
+	@IBOutlet weak var temperatureWeatherConditionLabel: UILabel!
+	
+	@IBOutlet weak var humidityLabel: UILabel!
+	@IBOutlet weak var precipitationLabel: UILabel!
+	@IBOutlet weak var pressureLabel: UILabel!
+	@IBOutlet weak var windSpeedLabel: UILabel!
+	@IBOutlet weak var windDirectionLabel: UILabel!
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+		setUp()
 	}
 
-
+	func setUp() {
+		// Views SetUp
+		currentLocationButton.imageView?.contentMode = .scaleAspectFit
+	}
+	
+	@IBAction func setCurrentLocation(_ sender: Any) {
+	}
+	
+	@IBAction func shareWeatherInfo(_ sender: Any) {
+	}
 }
 
