@@ -156,6 +156,7 @@
 				89BFC3F120DDE08800A76F25 /* Models */,
 				89BFC3F220DDE08C00A76F25 /* Resources */,
 				89BFC40220DDE7A100A76F25 /* Support */,
+				89325BE020DE06D900DE7E89 /* Views */,
 			);
 			path = Forecast;
 			sourceTree = "<group>";
@@ -176,6 +177,21 @@
 				891A5F8520DDDA2B00E6FDBA /* Info.plist */,
 			);
 			path = ForecastUITests;
+			sourceTree = "<group>";
+		};
+		89325BE020DE06D900DE7E89 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				89325BE120DE06DF00DE7E89 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		89325BE120DE06DF00DE7E89 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		89BFC3F020DDE07100A76F25 /* Controllers */ = {
