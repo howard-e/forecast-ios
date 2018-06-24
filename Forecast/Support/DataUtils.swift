@@ -9,7 +9,6 @@
 import UIKit
 import SwiftyJSON
 import Alamofire
-import RealmSwift
 import SwiftEventBus
 
 

@@ -12,7 +12,7 @@ target 'Forecast' do
 
   pod 'NVActivityIndicatorView'
 
-  pod 'RealmSwift'
+  # pod 'RealmSwift'
 
   # Firebase Pods
   pod 'Firebase/Core'

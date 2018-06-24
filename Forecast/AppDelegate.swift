@@ -8,7 +8,6 @@
 
 import UIKit
 import Firebase
-import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,7 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
-		realmSetup()
 		firebaseSetup()
 		
 		if getUserDefaults(string: UserDefaultsKeys.deviceId) == nil {
@@ -34,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		return true
 	}
 	
-	func realmSetup() {
+	/*func realmSetup() {
 		// To Account for when any of the realm models change (Automatic Migration)
 		let config = Realm.Configuration(
 			// Set the new schema version. This must be greater than the previously used
@@ -55,7 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		// Tell Realm to use this new configuration object for the default Realm
 		Realm.Configuration.defaultConfiguration = config
 		_ = try! Realm()
-	}
+	}*/
 	
 	func firebaseSetup() {
 		FirebaseApp.configure()

@@ -91,5 +91,24 @@ class TodayViewController: UIViewController {
 	}
 	
 	@IBAction func shareWeatherInfo(_ sender: Any) {
+		let todayWeatherInfo = getUserDefaults(any: UserDefaultsKeys.todayWeatherInfo) as! [String: Any]
+		
+		let locationName = todayWeatherInfo["location_name"] as? String ?? "N/A"
+		let temperature = todayWeatherInfo["temperature"] as? Double ?? -1
+		let weatherCondition = todayWeatherInfo["weather_condition"] as? String ?? "N/A"
+		let weatherConditionMessage = "Hey! It's \(String(format: "%.0f", temperature))°C in \(locationName)!\nWeather Condition? \(weatherCondition)."
+		
+		let activityViewController = UIActivityViewController(activityItems: [weatherStatusIndicatorImageView.image ?? UIImage(named: "SplashIcon")!, weatherConditionMessage], applicationActivities: nil)
+		activityViewController.popoverPresentationController?.sourceView = self.view
+		activityViewController.excludedActivityTypes = [.airDrop]
+		
+		activityViewController.completionWithItemsHandler = { activityType, completed, returnedItems, activityError in
+			if activityError != nil {
+				self.alert(message: "Something went wrong when trying to share. Please try again.", title: "Error")
+				return
+			}
+			completed ? self.alert(message: "Successfully Shared!") : self.alert(message: "Sharing Cancelled")
+		}
+		self.present(activityViewController, animated: true, completion: nil)
 	}
 }

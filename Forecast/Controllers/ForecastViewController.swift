@@ -21,7 +21,9 @@ class ForecastViewController: UIViewController {
 	
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
+		
 		getLatestForecastData()
+		refreshControl.stopRefresh()
 	}
 	
 	override func viewDidLoad() {
