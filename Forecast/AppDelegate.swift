@@ -9,16 +9,30 @@
 import UIKit
 import Firebase
 import RealmSwift
+import CoreLocation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+	let locationManager = CLLocationManager()
+
 	var window: UIWindow?
+	var db: Firestore!
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
 		realmSetup()
 		firebaseSetup()
+		
+		if getUserDefaults(string: UserDefaultsKeys.deviceId) == nil {
+			if let deviceId = UIDevice.current.identifierForVendor?.uuidString {
+				setUserDefaults(string: deviceId, key: UserDefaultsKeys.deviceId)
+			}
+		}
+		
+		let seenOnboarding = getUserDefaults(bool: UserDefaultsKeys.seenOnboarding)
+		let rootController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: seenOnboarding ? ControllerIdentifiers.dashboardTabController : ControllerIdentifiers.onboardingController)
+		window?.rootViewController = rootController
 		
 		return true
 	}
@@ -48,6 +62,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	
 	func firebaseSetup() {
 		FirebaseApp.configure()
+		
+		// Database Set Up
+		db = Firestore.firestore()
+		let settings = db.settings
+		settings.areTimestampsInSnapshotsEnabled = true
+		db.settings = settings
 	}
 
 	func applicationWillResignActive(_ application: UIApplication) {

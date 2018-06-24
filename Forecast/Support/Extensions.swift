@@ -10,10 +10,15 @@ import UIKit
 
 extension UIViewController {
 	// Show simple alert dialog with a title, description and an OK button
-	func alert(message: String, title: String? = nil, okActionTitle: String? = "OK", customHandler: ((UIAlertAction) -> Swift.Void)? = nil) {
+	func alert(message: String, title: String? = nil, okActionTitle: String? = "OK", customHandler: ((UIAlertAction) -> Swift.Void)? = nil, otherActionTitle: String? = nil, otherCustomHandler: ((UIAlertAction) -> Swift.Void)? = nil) {
 		let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
 		let okAction = UIAlertAction(title: okActionTitle, style: .default, handler: customHandler)
 		alertController.addAction(okAction)
+		
+		if otherActionTitle != nil {
+			let otherAction = UIAlertAction(title: otherActionTitle, style: .default, handler: otherCustomHandler)
+			alertController.addAction(otherAction)
+		}
 		
 		self.present(alertController, animated: true, completion: nil)
 	}

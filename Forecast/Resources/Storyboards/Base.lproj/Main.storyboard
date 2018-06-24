@@ -24,7 +24,7 @@
         <!--Onboarding View Controller-->
         <scene sceneID="rUO-UH-0zx">
             <objects>
-                <viewController id="Al5-Mc-YQ6" customClass="OnboardingViewController" customModule="Forecast" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OnboardingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Al5-Mc-YQ6" customClass="OnboardingViewController" customModule="Forecast" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hVo-tZ-m0P">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,6 +86,7 @@ Promise. 😇</string>
                     </view>
                     <connections>
                         <outlet property="continueButton" destination="PFV-Ut-Gu9" id="uyf-ET-dEo"/>
+                        <segue destination="sfH-Ml-r1Y" kind="showDetail" identifier="goToDashboard" id="xzn-kX-B4B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="khX-ub-H6u" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -95,7 +96,7 @@ Promise. 😇</string>
         <!--Tab Bar Controller-->
         <scene sceneID="jqb-mW-grD">
             <objects>
-                <tabBarController id="sfH-Ml-r1Y" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="DashboardTabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sfH-Ml-r1Y" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sJd-Ig-ExM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -137,15 +138,15 @@ Promise. 😇</string>
                                         <rect key="frame" x="137.66666666666666" y="64" width="100" height="100"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7K-r3-bnT">
-                                        <rect key="frame" x="113.66666666666669" y="176" width="148" height="22"/>
-                                        <state key="normal" title="Current Location" image="CurrentLocation">
+                                        <rect key="frame" x="65" y="176" width="245" height="22"/>
+                                        <state key="normal" title="Current Location Unavailable" image="CurrentLocation">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="setCurrentLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BhE-Yt-2s3"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22°C | Sunny" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5N5-Hv-JW5">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N/A°C | N/A" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5N5-Hv-JW5">
                                         <rect key="frame" x="16" y="210" width="343" height="24"/>
                                         <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="24"/>
                                         <color key="textColor" red="0.18431372549019609" green="0.56862745098039214" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -169,8 +170,8 @@ Promise. 😇</string>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HumidityOther" translatesAutoresizingMaskIntoConstraints="NO" id="efV-Fi-umU">
                                                                         <rect key="frame" x="29.666666666666664" y="18.666666666666686" width="30" height="30"/>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Qb-XQ-LGS">
-                                                                        <rect key="frame" x="23.333333333333339" y="56.666666666666686" width="42.666666666666657" height="18"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N/A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Qb-XQ-LGS">
+                                                                        <rect key="frame" x="29.666666666666664" y="56.666666666666686" width="30" height="18"/>
                                                                         <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -190,8 +191,8 @@ Promise. 😇</string>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PrecipitationOther" translatesAutoresizingMaskIntoConstraints="NO" id="crn-tv-iUc">
                                                                         <rect key="frame" x="29.666666666666657" y="18.666666666666686" width="30" height="30"/>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQB-2K-ejD">
-                                                                        <rect key="frame" x="23.333333333333339" y="56.666666666666686" width="42.666666666666657" height="18"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N/A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQB-2K-ejD">
+                                                                        <rect key="frame" x="29.666666666666657" y="56.666666666666686" width="30" height="18"/>
                                                                         <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -211,8 +212,8 @@ Promise. 😇</string>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PressureOther" translatesAutoresizingMaskIntoConstraints="NO" id="OwP-ac-UV9">
                                                                         <rect key="frame" x="29.666666666666657" y="18.666666666666686" width="30" height="30"/>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbc-Jb-b58">
-                                                                        <rect key="frame" x="23.333333333333339" y="56.666666666666686" width="42.666666666666657" height="18"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N/A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbc-Jb-b58">
+                                                                        <rect key="frame" x="29.666666666666657" y="56.666666666666686" width="30" height="18"/>
                                                                         <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -237,8 +238,8 @@ Promise. 😇</string>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WindOther" translatesAutoresizingMaskIntoConstraints="NO" id="7SK-ga-1YA">
                                                                         <rect key="frame" x="56" y="18.666666666666686" width="30" height="30"/>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htU-uw-I8B">
-                                                                        <rect key="frame" x="49.666666666666671" y="56.666666666666686" width="42.666666666666671" height="18"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N/A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htU-uw-I8B">
+                                                                        <rect key="frame" x="56" y="56.666666666666686" width="30" height="18"/>
                                                                         <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -258,8 +259,8 @@ Promise. 😇</string>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WindDirectionOther" translatesAutoresizingMaskIntoConstraints="NO" id="wBX-2F-YmH">
                                                                         <rect key="frame" x="56" y="18.666666666666686" width="30" height="30"/>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqh-fl-cm2">
-                                                                        <rect key="frame" x="49.666666666666686" y="56.666666666666686" width="42.666666666666657" height="18"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N/A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqh-fl-cm2">
+                                                                        <rect key="frame" x="56" y="56.666666666666686" width="30" height="18"/>
                                                                         <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -344,6 +345,7 @@ Promise. 😇</string>
                     </view>
                     <tabBarItem key="tabBarItem" title="Today" image="TodayInactiveTab" selectedImage="TodayActiveTab" id="AmB-xj-hx5"/>
                     <connections>
+                        <outlet property="currentLocationButton" destination="R7K-r3-bnT" id="vao-4r-Awj"/>
                         <outlet property="humidityLabel" destination="8Qb-XQ-LGS" id="6LD-hW-QXj"/>
                         <outlet property="precipitationLabel" destination="TQB-2K-ejD" id="f7M-VF-Hgf"/>
                         <outlet property="pressureLabel" destination="gbc-Jb-b58" id="8Pc-eo-cVv"/>
@@ -369,7 +371,7 @@ Promise. 😇</string>
                                 <rect key="frame" x="0.0" y="44" width="375" height="719"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIn-rF-ex8">
-                                        <rect key="frame" x="152.66666666666666" y="0.0" width="70" height="30"/>
+                                        <rect key="frame" x="153.33333333333334" y="0.0" width="68.666666666666657" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="VA4-8j-XRF"/>
                                         </constraints>
