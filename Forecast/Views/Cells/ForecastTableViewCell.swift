@@ -14,6 +14,7 @@ class ForecastTableViewCell: UITableViewCell {
 	@IBOutlet weak var weatherConditionLabel: UILabel!
 	@IBOutlet weak var forecastTimeLabel: UILabel!
 	@IBOutlet weak var weatherConditionTemperatureLabel: UILabel!
+	@IBOutlet weak var bottomDividerImageView: UIImageView!
 	
 	override func awakeFromNib() {
         super.awakeFromNib()

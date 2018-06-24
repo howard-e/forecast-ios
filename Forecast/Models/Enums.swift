@@ -20,4 +20,18 @@ enum WeatherCondition: String {
 	case thunderstorm = "11"
 	
 	static let allValues = [brokenClouds, clearSky, fewClouds, mist, rain, scatteredClouds, showerRain, snow, thunderstorm]
+	
+	static func evaluateWeatherCondition(_ weatherConditionIcon: String) -> WeatherCondition? {
+		for condition in allValues {
+			if weatherConditionIcon.contains(condition.rawValue) {
+				return condition
+			}
+		}
+		return nil
+	}
+}
+
+enum OpenWeatherMapRequestType: String {
+	case weather = "weather"
+	case forecast = "forecast"
 }

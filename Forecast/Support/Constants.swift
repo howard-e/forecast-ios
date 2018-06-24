@@ -67,10 +67,14 @@ struct ControllerIdentifiers {
 
 struct UserDefaultsKeys {
 	static let deviceId = "device_id"
-	static let todayWeatherInfo = "today_weather_info"
 	static let seenOnboarding = "seen_onboarding"
+	static let lastestCoordinates = "latest_coordinates"
+	
+	static let todayWeatherInfo = "today_weather_info"
+	static let forecastInfo = "forecast_info"
 }
 
 struct EventBusParams {
 	static let refreshTodayWeatherInfo = "refresh_today_weather_info"
+	static let forecastWeatherInfo = "forecast_weather_info"
 }
