@@ -8,12 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		891A5F6420DDDA2900E6FDBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891A5F6320DDDA2900E6FDBA /* AppDelegate.swift */; };
-		891A5F6620DDDA2900E6FDBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891A5F6520DDDA2900E6FDBA /* ViewController.swift */; };
+		891A5F6620DDDA2900E6FDBA /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891A5F6520DDDA2900E6FDBA /* TodayViewController.swift */; };
 		891A5F6920DDDA2900E6FDBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891A5F6720DDDA2900E6FDBA /* Main.storyboard */; };
 		891A5F6B20DDDA2A00E6FDBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 891A5F6A20DDDA2A00E6FDBA /* Assets.xcassets */; };
 		891A5F6E20DDDA2A00E6FDBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891A5F6C20DDDA2A00E6FDBA /* LaunchScreen.storyboard */; };
 		891A5F7920DDDA2A00E6FDBA /* ForecastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891A5F7820DDDA2A00E6FDBA /* ForecastTests.swift */; };
 		891A5F8420DDDA2A00E6FDBA /* ForecastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891A5F8320DDDA2A00E6FDBA /* ForecastUITests.swift */; };
+		89325BDD20DDECDB00DE7E89 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89325BDC20DDECDB00DE7E89 /* Extensions.swift */; };
+		89325BDF20DE038600DE7E89 /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89325BDE20DE038600DE7E89 /* ForecastViewController.swift */; };
+		89325BE420DE074000DE7E89 /* ForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89325BE220DE074000DE7E89 /* ForecastTableViewCell.swift */; };
+		89325BE520DE074000DE7E89 /* ForecastTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89325BE320DE074000DE7E89 /* ForecastTableViewCell.xib */; };
+		897CD26E20DE95ED006CAAC5 /* CustomHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897CD26C20DE95ED006CAAC5 /* CustomHeaderTableViewCell.swift */; };
+		897CD26F20DE95ED006CAAC5 /* CustomHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 897CD26D20DE95ED006CAAC5 /* CustomHeaderTableViewCell.xib */; };
+		897CD27120DE9E72006CAAC5 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897CD27020DE9E72006CAAC5 /* OnboardingViewController.swift */; };
+		897CD27320DF3620006CAAC5 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897CD27220DF3620006CAAC5 /* Enums.swift */; };
+		89B61D3020DFF8890049CACF /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B61D2F20DFF8890049CACF /* Models.swift */; };
+		89B61D3220E025740049CACF /* ForecastLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B61D3120E025740049CACF /* ForecastLocationManager.swift */; };
+		89BFC3F720DDE1EC00A76F25 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89BFC3F620DDE1EC00A76F25 /* GoogleService-Info.plist */; };
+		89BFC3FD20DDE55A00A76F25 /* ProximaNova-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89BFC3F920DDE55900A76F25 /* ProximaNova-Light.otf */; };
+		89BFC3FE20DDE55A00A76F25 /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89BFC3FA20DDE55900A76F25 /* ProximaNova-Regular.otf */; };
+		89BFC3FF20DDE55A00A76F25 /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89BFC3FB20DDE55900A76F25 /* ProximaNova-Bold.otf */; };
+		89BFC40020DDE55A00A76F25 /* ProximaNova-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89BFC3FC20DDE55A00A76F25 /* ProximaNova-Semibold.otf */; };
+		89BFC40420DDE7B200A76F25 /* DataUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BFC40320DDE7B200A76F25 /* DataUtils.swift */; };
+		89BFC40620DDE7C600A76F25 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BFC40520DDE7C600A76F25 /* Constants.swift */; };
+		89BFC40820DDE86C00A76F25 /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BFC40720DDE86C00A76F25 /* HttpManager.swift */; };
+		89BFC40A20DDEA2700A76F25 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BFC40920DDEA2700A76F25 /* ActivityIndicator.swift */; };
+		89BFC40C20DDEAB400A76F25 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BFC40B20DDEAB400A76F25 /* Utils.swift */; };
+		89FAD0D770DC2F0FCCAAFB72 /* Pods_Forecast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A56F2927A7643EBAB19735 /* Pods_Forecast.framework */; };
+		8EFAB5305E48B1D937AD63EA /* Pods_ForecastUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D9B259A995C5571419993CE /* Pods_ForecastUITests.framework */; };
+		E6F064C9F92472D09369E58C /* Pods_ForecastTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C78B3531B70CC2F6E1F79E1 /* Pods_ForecastTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +57,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07099B2B2E7D500287C78A83 /* Pods-ForecastUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastUITests/Pods-ForecastUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0C78B3531B70CC2F6E1F79E1 /* Pods_ForecastTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForecastTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49A56F2927A7643EBAB19735 /* Pods_Forecast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Forecast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60A93BC4DDD4222F975B5390 /* Pods-ForecastTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastTests/Pods-ForecastTests.release.xcconfig"; sourceTree = "<group>"; };
 		891A5F6020DDDA2900E6FDBA /* Forecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Forecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		891A5F6320DDDA2900E6FDBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		891A5F6520DDDA2900E6FDBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		891A5F6520DDDA2900E6FDBA /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		891A5F6820DDDA2900E6FDBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		891A5F6A20DDDA2A00E6FDBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		891A5F6D20DDDA2A00E6FDBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +74,31 @@
 		891A5F7F20DDDA2A00E6FDBA /* ForecastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForecastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		891A5F8320DDDA2A00E6FDBA /* ForecastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastUITests.swift; sourceTree = "<group>"; };
 		891A5F8520DDDA2B00E6FDBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89325BDC20DDECDB00DE7E89 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		89325BDE20DE038600DE7E89 /* ForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
+		89325BE220DE074000DE7E89 /* ForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTableViewCell.swift; sourceTree = "<group>"; };
+		89325BE320DE074000DE7E89 /* ForecastTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForecastTableViewCell.xib; sourceTree = "<group>"; };
+		897CD26C20DE95ED006CAAC5 /* CustomHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		897CD26D20DE95ED006CAAC5 /* CustomHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		897CD27020DE9E72006CAAC5 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		897CD27220DF3620006CAAC5 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		89B61D2F20DFF8890049CACF /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		89B61D3120E025740049CACF /* ForecastLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastLocationManager.swift; sourceTree = "<group>"; };
+		89BFC3F620DDE1EC00A76F25 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		89BFC3F920DDE55900A76F25 /* ProximaNova-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Light.otf"; sourceTree = "<group>"; };
+		89BFC3FA20DDE55900A76F25 /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+		89BFC3FB20DDE55900A76F25 /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.otf"; sourceTree = "<group>"; };
+		89BFC3FC20DDE55A00A76F25 /* ProximaNova-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Semibold.otf"; sourceTree = "<group>"; };
+		89BFC40320DDE7B200A76F25 /* DataUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUtils.swift; sourceTree = "<group>"; };
+		89BFC40520DDE7C600A76F25 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		89BFC40720DDE86C00A76F25 /* HttpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
+		89BFC40920DDEA2700A76F25 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		89BFC40B20DDEAB400A76F25 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		9D9B259A995C5571419993CE /* Pods_ForecastUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForecastUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF0D14A44409256A4172AAED /* Pods-Forecast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Forecast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Forecast/Pods-Forecast.debug.xcconfig"; sourceTree = "<group>"; };
+		B2AB7903BE4B784CDBC04DE0 /* Pods-ForecastUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastUITests/Pods-ForecastUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D609370F97B14AD97EC33B83 /* Pods-ForecastTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastTests/Pods-ForecastTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F88DB53F71E591C2064F38B4 /* Pods-Forecast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Forecast.release.xcconfig"; path = "Pods/Target Support Files/Pods-Forecast/Pods-Forecast.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89FAD0D770DC2F0FCCAAFB72 /* Pods_Forecast.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6F064C9F92472D09369E58C /* Pods_ForecastTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +122,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EFAB5305E48B1D937AD63EA /* Pods_ForecastUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39362C0A60509AC3C97A9D8B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF0D14A44409256A4172AAED /* Pods-Forecast.debug.xcconfig */,
+				F88DB53F71E591C2064F38B4 /* Pods-Forecast.release.xcconfig */,
+				D609370F97B14AD97EC33B83 /* Pods-ForecastTests.debug.xcconfig */,
+				60A93BC4DDD4222F975B5390 /* Pods-ForecastTests.release.xcconfig */,
+				07099B2B2E7D500287C78A83 /* Pods-ForecastUITests.debug.xcconfig */,
+				B2AB7903BE4B784CDBC04DE0 /* Pods-ForecastUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		891A5F5720DDDA2900E6FDBA = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +149,8 @@
 				891A5F7720DDDA2A00E6FDBA /* ForecastTests */,
 				891A5F8220DDDA2A00E6FDBA /* ForecastUITests */,
 				891A5F6120DDDA2900E6FDBA /* Products */,
+				39362C0A60509AC3C97A9D8B /* Pods */,
+				9F75A3C665E87E30D4DEFB6E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +168,11 @@
 			isa = PBXGroup;
 			children = (
 				891A5F6320DDDA2900E6FDBA /* AppDelegate.swift */,
-				891A5F6520DDDA2900E6FDBA /* ViewController.swift */,
-				891A5F6720DDDA2900E6FDBA /* Main.storyboard */,
-				891A5F6A20DDDA2A00E6FDBA /* Assets.xcassets */,
-				891A5F6C20DDDA2A00E6FDBA /* LaunchScreen.storyboard */,
-				891A5F6F20DDDA2A00E6FDBA /* Info.plist */,
+				89BFC3F020DDE07100A76F25 /* Controllers */,
+				89BFC3F120DDE08800A76F25 /* Models */,
+				89BFC3F220DDE08C00A76F25 /* Resources */,
+				89BFC40220DDE7A100A76F25 /* Support */,
+				89325BE020DE06D900DE7E89 /* Views */,
 			);
 			path = Forecast;
 			sourceTree = "<group>";
@@ -125,6 +195,100 @@
 			path = ForecastUITests;
 			sourceTree = "<group>";
 		};
+		89325BE020DE06D900DE7E89 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				89325BE120DE06DF00DE7E89 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		89325BE120DE06DF00DE7E89 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				897CD26C20DE95ED006CAAC5 /* CustomHeaderTableViewCell.swift */,
+				897CD26D20DE95ED006CAAC5 /* CustomHeaderTableViewCell.xib */,
+				89325BE220DE074000DE7E89 /* ForecastTableViewCell.swift */,
+				89325BE320DE074000DE7E89 /* ForecastTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		89BFC3F020DDE07100A76F25 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				89325BDE20DE038600DE7E89 /* ForecastViewController.swift */,
+				897CD27020DE9E72006CAAC5 /* OnboardingViewController.swift */,
+				891A5F6520DDDA2900E6FDBA /* TodayViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		89BFC3F120DDE08800A76F25 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				897CD27220DF3620006CAAC5 /* Enums.swift */,
+				89B61D2F20DFF8890049CACF /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		89BFC3F220DDE08C00A76F25 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				89BFC3F620DDE1EC00A76F25 /* GoogleService-Info.plist */,
+				891A5F6F20DDDA2A00E6FDBA /* Info.plist */,
+				891A5F6A20DDDA2A00E6FDBA /* Assets.xcassets */,
+				89BFC3F420DDE0A200A76F25 /* Fonts */,
+				89BFC3F320DDE09900A76F25 /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		89BFC3F320DDE09900A76F25 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				891A5F6C20DDDA2A00E6FDBA /* LaunchScreen.storyboard */,
+				891A5F6720DDDA2900E6FDBA /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		89BFC3F420DDE0A200A76F25 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				89BFC3FB20DDE55900A76F25 /* ProximaNova-Bold.otf */,
+				89BFC3F920DDE55900A76F25 /* ProximaNova-Light.otf */,
+				89BFC3FA20DDE55900A76F25 /* ProximaNova-Regular.otf */,
+				89BFC3FC20DDE55A00A76F25 /* ProximaNova-Semibold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		89BFC40220DDE7A100A76F25 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				89BFC40920DDEA2700A76F25 /* ActivityIndicator.swift */,
+				89BFC40520DDE7C600A76F25 /* Constants.swift */,
+				89BFC40320DDE7B200A76F25 /* DataUtils.swift */,
+				89325BDC20DDECDB00DE7E89 /* Extensions.swift */,
+				89B61D3120E025740049CACF /* ForecastLocationManager.swift */,
+				89BFC40720DDE86C00A76F25 /* HttpManager.swift */,
+				89BFC40B20DDEAB400A76F25 /* Utils.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		9F75A3C665E87E30D4DEFB6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49A56F2927A7643EBAB19735 /* Pods_Forecast.framework */,
+				0C78B3531B70CC2F6E1F79E1 /* Pods_ForecastTests.framework */,
+				9D9B259A995C5571419993CE /* Pods_ForecastUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +296,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 891A5F8820DDDA2B00E6FDBA /* Build configuration list for PBXNativeTarget "Forecast" */;
 			buildPhases = (
+				EE19C9B5599387181E0AA378 /* [CP] Check Pods Manifest.lock */,
 				891A5F5C20DDDA2900E6FDBA /* Sources */,
 				891A5F5D20DDDA2900E6FDBA /* Frameworks */,
 				891A5F5E20DDDA2900E6FDBA /* Resources */,
+				5F742FA6E323D3252709F146 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +315,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 891A5F8B20DDDA2B00E6FDBA /* Build configuration list for PBXNativeTarget "ForecastTests" */;
 			buildPhases = (
+				B09EC4D375E6B258CAFA3D30 /* [CP] Check Pods Manifest.lock */,
 				891A5F7020DDDA2A00E6FDBA /* Sources */,
 				891A5F7120DDDA2A00E6FDBA /* Frameworks */,
 				891A5F7220DDDA2A00E6FDBA /* Resources */,
@@ -167,6 +334,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 891A5F8E20DDDA2B00E6FDBA /* Build configuration list for PBXNativeTarget "ForecastUITests" */;
 			buildPhases = (
+				0E6AF3E3AC29A66A313AFDB3 /* [CP] Check Pods Manifest.lock */,
 				891A5F7B20DDDA2A00E6FDBA /* Sources */,
 				891A5F7C20DDDA2A00E6FDBA /* Frameworks */,
 				891A5F7D20DDDA2A00E6FDBA /* Resources */,
@@ -229,9 +397,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89BFC3FD20DDE55A00A76F25 /* ProximaNova-Light.otf in Resources */,
 				891A5F6E20DDDA2A00E6FDBA /* LaunchScreen.storyboard in Resources */,
+				89BFC3FF20DDE55A00A76F25 /* ProximaNova-Bold.otf in Resources */,
+				89BFC3F720DDE1EC00A76F25 /* GoogleService-Info.plist in Resources */,
 				891A5F6B20DDDA2A00E6FDBA /* Assets.xcassets in Resources */,
+				89325BE520DE074000DE7E89 /* ForecastTableViewCell.xib in Resources */,
+				897CD26F20DE95ED006CAAC5 /* CustomHeaderTableViewCell.xib in Resources */,
 				891A5F6920DDDA2900E6FDBA /* Main.storyboard in Resources */,
+				89BFC3FE20DDE55A00A76F25 /* ProximaNova-Regular.otf in Resources */,
+				89BFC40020DDE55A00A76F25 /* ProximaNova-Semibold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +426,125 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E6AF3E3AC29A66A313AFDB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ForecastUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F742FA6E323D3252709F146 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Forecast/Pods-Forecast-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftEventBus/SwiftEventBus.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftEventBus.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Forecast/Pods-Forecast-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B09EC4D375E6B258CAFA3D30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ForecastTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE19C9B5599387181E0AA378 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Forecast-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		891A5F5C20DDDA2900E6FDBA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				891A5F6620DDDA2900E6FDBA /* ViewController.swift in Sources */,
+				891A5F6620DDDA2900E6FDBA /* TodayViewController.swift in Sources */,
+				89BFC40820DDE86C00A76F25 /* HttpManager.swift in Sources */,
+				89325BDF20DE038600DE7E89 /* ForecastViewController.swift in Sources */,
+				89BFC40420DDE7B200A76F25 /* DataUtils.swift in Sources */,
+				89325BDD20DDECDB00DE7E89 /* Extensions.swift in Sources */,
+				89BFC40C20DDEAB400A76F25 /* Utils.swift in Sources */,
+				89325BE420DE074000DE7E89 /* ForecastTableViewCell.swift in Sources */,
+				897CD27320DF3620006CAAC5 /* Enums.swift in Sources */,
+				897CD27120DE9E72006CAAC5 /* OnboardingViewController.swift in Sources */,
 				891A5F6420DDDA2900E6FDBA /* AppDelegate.swift in Sources */,
+				89BFC40A20DDEA2700A76F25 /* ActivityIndicator.swift in Sources */,
+				89B61D3220E025740049CACF /* ForecastLocationManager.swift in Sources */,
+				89B61D3020DFF8890049CACF /* Models.swift in Sources */,
+				89BFC40620DDE7C600A76F25 /* Constants.swift in Sources */,
+				897CD26E20DE95ED006CAAC5 /* CustomHeaderTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,48 +715,54 @@
 		};
 		891A5F8920DDDA2B00E6FDBA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF0D14A44409256A4172AAED /* Pods-Forecast.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MY8JKC2SMV;
-				INFOPLIST_FILE = Forecast/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Forecast/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.heed.Forecast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		891A5F8A20DDDA2B00E6FDBA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F88DB53F71E591C2064F38B4 /* Pods-Forecast.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MY8JKC2SMV;
-				INFOPLIST_FILE = Forecast/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Forecast/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.heed.Forecast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		891A5F8C20DDDA2B00E6FDBA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D609370F97B14AD97EC33B83 /* Pods-ForecastTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MY8JKC2SMV;
 				INFOPLIST_FILE = ForecastTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -485,12 +778,14 @@
 		};
 		891A5F8D20DDDA2B00E6FDBA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60A93BC4DDD4222F975B5390 /* Pods-ForecastTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MY8JKC2SMV;
 				INFOPLIST_FILE = ForecastTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -506,11 +801,13 @@
 		};
 		891A5F8F20DDDA2B00E6FDBA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07099B2B2E7D500287C78A83 /* Pods-ForecastUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MY8JKC2SMV;
 				INFOPLIST_FILE = ForecastUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -526,11 +823,13 @@
 		};
 		891A5F9020DDDA2B00E6FDBA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2AB7903BE4B784CDBC04DE0 /* Pods-ForecastUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MY8JKC2SMV;
 				INFOPLIST_FILE = ForecastUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
