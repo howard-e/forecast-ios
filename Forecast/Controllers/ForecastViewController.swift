@@ -22,8 +22,8 @@ class ForecastViewController: UIViewController {
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 		
-		getLatestForecastData()
-		refreshControl.stopRefresh()
+		getLatestForecastData() // get latest forecast for current location
+		refreshControl.stopRefresh() // to avoid rare bug where refresh icon doesn't want to leave 🤨
 	}
 	
 	override func viewDidLoad() {
@@ -33,8 +33,8 @@ class ForecastViewController: UIViewController {
 	
 	func setUp() {
 		// Set up tableview
-		let attributes: [NSAttributedStringKey: Any] = [NSAttributedStringKey.foregroundColor: UIColor.darkGray, NSAttributedStringKey.font: UIFont(name: "ProximaNova-Light", size: 14)!]
-		refreshControl.attributedTitle = NSAttributedString(string: "Getting the latest 5-day forecast", attributes: attributes)
+		let attributes: [NSAttributedStringKey: Any] = [NSAttributedStringKey.foregroundColor: UIColor.darkGray, NSAttributedStringKey.font: UIFont(name: "ProximaNova-Regular", size: 14)!]
+		refreshControl.attributedTitle = NSAttributedString(string: "Getting the latest 5-day forecast 🌤", attributes: attributes)
 		refreshControl.addTarget(self, action: #selector(getLatestForecastData), for: UIControlEvents.valueChanged)
 		forecastTableView.refreshControl = refreshControl
 		
@@ -43,8 +43,8 @@ class ForecastViewController: UIViewController {
 		
 		forecastTableView.delegate = self
 		forecastTableView.dataSource = self
-		forecastTableView.rowHeight = 150
-		forecastTableView.estimatedRowHeight = 150
+		forecastTableView.rowHeight = 90
+		forecastTableView.estimatedRowHeight = 90
 		
 		loadTableData()
 		SwiftEventBus.onMainThread(self, name: EventBusParams.forecastWeatherInfo) { result in
@@ -126,17 +126,17 @@ extension ForecastViewController: UITableViewDataSource {
 		let section = indexPath.section
 		let row = indexPath.row
 		
-		if let dayForecastData = tableData[sectionNames[section]] {
+		if let dayForecastData = tableData[sectionNames[section]] { // to retrieve forecast dataset of weekday
 			let forecast = dayForecastData[row]
 			
 			if row == dayForecastData.count - 1 {
-				cell.bottomDividerImageView.isHidden = true
+				cell.bottomDividerImageView.isHidden = true // So the cell's divider doesn't show weird lines when meeting with the section header's dividers
 			} else {
 				cell.bottomDividerImageView.isHidden = false
 			}
 			
 			let condition = WeatherCondition.evaluateWeatherCondition(forecast.weatherStatusIcon)
-			if let condition = condition, let time = forecast.weatherStatusIcon.last {
+			if let condition = condition, let time = forecast.weatherStatusIcon.last { // time here refers to the d = day and n = n on the end of the weather status icon string returned from the OpenWeatherMap API
 				switch time {
 				case "d":
 					cell.weatherConditionIndicatorImageView.image = Constants.WEATHER_CONDITION_IMAGE_DAY[condition]

@@ -8,10 +8,6 @@
 
 import Foundation
 
-class Today {
-	
-}
-
 class Forecast {
 	var timestamp: Double
 	var temperature: Double
@@ -25,6 +21,7 @@ class Forecast {
 		self.weatherCondition = weatherCondition
 	}
 	
+	// Meant to return HH:MM format for time of forecast
 	func getTimeOfDay() -> String {
 		let forecastDate = Date(timeIntervalSince1970: timestamp)
 		
@@ -32,6 +29,7 @@ class Forecast {
 		return "\(String(format: "%02d", components.hour ?? 00)):\(String(format: "%02d", components.minute ?? 00))"
 	}
 	
+	// Meant to return 'MONDAY', 'TUESDAY' etc of forecast
 	func weekday() -> String {
 		let currentDate = Date()
 		let forecastDate = Date(timeIntervalSince1970: timestamp)
@@ -40,7 +38,7 @@ class Forecast {
 			return "TODAY"
 		} else if Calendar.current.isDateInYesterday(forecastDate) { // In the instance where data isn't uploaded in time
 			return "YESTERDAY"
-		} else if forecastDate < currentDate {
+		} else if forecastDate < currentDate { // fallback
 			return "PAST DAY"
 		} else {
 			return DateFormatter().weekdaySymbols[Calendar.current.component(.weekday, from: forecastDate) - 1].uppercased()

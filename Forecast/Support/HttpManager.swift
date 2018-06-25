@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-// Encapsulates the logic for sending various HTTP Requests
+// Encapsulates the logic for sending HTTP requests
 class HttpManager {
 	
 	static var shared = HttpManager()

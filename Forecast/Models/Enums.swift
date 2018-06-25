@@ -21,6 +21,7 @@ enum WeatherCondition: String {
 	
 	static let allValues = [brokenClouds, clearSky, fewClouds, mist, rain, scatteredClouds, showerRain, snow, thunderstorm]
 	
+	// returns the WeatherCondition case if weatherConditionIcon String contains any of those conditions' values; these values are from the OpenWeatherMap API
 	static func evaluateWeatherCondition(_ weatherConditionIcon: String) -> WeatherCondition? {
 		for condition in allValues {
 			if weatherConditionIcon.contains(condition.rawValue) {

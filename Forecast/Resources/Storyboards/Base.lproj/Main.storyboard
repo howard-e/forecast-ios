@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Al5-Mc-YQ6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.14" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Al5-Mc-YQ6">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -40,7 +39,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B8a-h6-XIO">
-                                        <rect key="frame" x="37.666666666666657" y="290.66666666666669" width="300" height="90"/>
+                                        <rect key="frame" x="37.666666666666657" y="290.66666666666669" width="300" height="105"/>
                                         <string key="text">Forecast needs your location to properly work. Could you allow this permission? 
 
 Please? 😇</string>
@@ -133,13 +132,13 @@ Please? 😇</string>
                                 <rect key="frame" x="0.0" y="74" width="375" height="2"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pDz-GK-ohU">
-                                <rect key="frame" x="0.0" y="76" width="375" height="653"/>
+                                <rect key="frame" x="0.0" y="76" width="375" height="687"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zjw-WY-KbN" userLabel="Scroll Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="629.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="629"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qNj-2I-D9J">
-                                                <rect key="frame" x="138" y="32" width="100" height="100"/>
+                                                <rect key="frame" x="137.66666666666666" y="32" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="S8o-uR-6Xx"/>
                                                     <constraint firstAttribute="width" constant="100" id="x0r-sF-GP5"/>
@@ -165,10 +164,10 @@ Please? 😇</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Divider1px" translatesAutoresizingMaskIntoConstraints="NO" id="yks-2w-LJS">
-                                                <rect key="frame" x="112" y="260" width="150" height="1"/>
+                                                <rect key="frame" x="112.66666666666669" y="260" width="150" height="1"/>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xcC-OS-RU9" userLabel="Weather Details Container">
-                                                <rect key="frame" x="38" y="271" width="300" height="150"/>
+                                                <rect key="frame" x="37.666666666666657" y="271" width="300" height="150"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="wjh-oT-ora">
                                                         <rect key="frame" x="0.0" y="0.0" width="300" height="150"/>
@@ -180,10 +179,10 @@ Please? 😇</string>
                                                                         <rect key="frame" x="0.0" y="0.0" width="89.333333333333329" height="67"/>
                                                                         <subviews>
                                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HumidityOther" translatesAutoresizingMaskIntoConstraints="NO" id="efV-Fi-umU">
-                                                                                <rect key="frame" x="29.333333333333329" y="19" width="30" height="30"/>
+                                                                                <rect key="frame" x="29.666666666666664" y="18.666666666666686" width="30" height="30"/>
                                                                             </imageView>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N/A%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Qb-XQ-LGS">
-                                                                                <rect key="frame" x="27" y="57" width="37" height="15"/>
+                                                                                <rect key="frame" x="26" y="56.666666666666686" width="37" height="15"/>
                                                                                 <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
@@ -201,10 +200,10 @@ Please? 😇</string>
                                                                         <rect key="frame" x="105.33333333333334" y="0.0" width="89.333333333333343" height="67"/>
                                                                         <subviews>
                                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PrecipitationOther" translatesAutoresizingMaskIntoConstraints="NO" id="crn-tv-iUc">
-                                                                                <rect key="frame" x="30.333333333333314" y="19" width="30" height="30"/>
+                                                                                <rect key="frame" x="29.666666666666657" y="18.666666666666686" width="30" height="30"/>
                                                                             </imageView>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N/A mm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQB-2K-ejD">
-                                                                                <rect key="frame" x="17.666666666666654" y="57" width="54.666666666666657" height="15"/>
+                                                                                <rect key="frame" x="17.333333333333339" y="56.666666666666686" width="54.666666666666657" height="15"/>
                                                                                 <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
@@ -219,13 +218,13 @@ Please? 😇</string>
                                                                         </constraints>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2RJ-aJ-TzB" userLabel="Pressure View">
-                                                                        <rect key="frame" x="210.66666666666666" y="0.0" width="89.333333333333343" height="67"/>
+                                                                        <rect key="frame" x="210.66666666666669" y="0.0" width="89.333333333333314" height="67"/>
                                                                         <subviews>
                                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PressureOther" translatesAutoresizingMaskIntoConstraints="NO" id="OwP-ac-UV9">
-                                                                                <rect key="frame" x="30.333333333333343" y="19" width="30" height="30"/>
+                                                                                <rect key="frame" x="29.666666666666657" y="18.666666666666686" width="30" height="30"/>
                                                                             </imageView>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N/A hPa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbc-Jb-b58">
-                                                                                <rect key="frame" x="18.000000000000028" y="57" width="55" height="15"/>
+                                                                                <rect key="frame" x="16.999999999999972" y="56.666666666666686" width="55" height="15"/>
                                                                                 <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
@@ -248,10 +247,10 @@ Please? 😇</string>
                                                                         <rect key="frame" x="0.0" y="0.0" width="142" height="67"/>
                                                                         <subviews>
                                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WindOther" translatesAutoresizingMaskIntoConstraints="NO" id="7SK-ga-1YA">
-                                                                                <rect key="frame" x="56" y="19" width="30" height="30"/>
+                                                                                <rect key="frame" x="56" y="18.666666666666686" width="30" height="30"/>
                                                                             </imageView>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N/A km/h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htU-uw-I8B">
-                                                                                <rect key="frame" x="40" y="57" width="63.333333333333343" height="15"/>
+                                                                                <rect key="frame" x="39.333333333333329" y="56.666666666666686" width="63.333333333333329" height="15"/>
                                                                                 <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
@@ -269,10 +268,10 @@ Please? 😇</string>
                                                                         <rect key="frame" x="158" y="0.0" width="142" height="67"/>
                                                                         <subviews>
                                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WindDirectionOther" translatesAutoresizingMaskIntoConstraints="NO" id="wBX-2F-YmH">
-                                                                                <rect key="frame" x="56" y="19" width="30" height="30"/>
+                                                                                <rect key="frame" x="56" y="18.666666666666686" width="30" height="30"/>
                                                                             </imageView>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N/A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqh-fl-cm2">
-                                                                                <rect key="frame" x="58.66666666666665" y="57" width="25.666666666666664" height="15"/>
+                                                                                <rect key="frame" x="57.999999999999993" y="56.666666666666686" width="25.666666666666664" height="15"/>
                                                                                 <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
@@ -301,10 +300,10 @@ Please? 😇</string>
                                                 </constraints>
                                             </view>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Divider1px" translatesAutoresizingMaskIntoConstraints="NO" id="1gL-dk-c41">
-                                                <rect key="frame" x="112" y="461" width="150" height="1"/>
+                                                <rect key="frame" x="112.66666666666669" y="461" width="150" height="1"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCZ-Y0-dzb">
-                                                <rect key="frame" x="164.66666666666666" y="494" width="47" height="40"/>
+                                                <rect key="frame" x="164" y="494" width="47" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="eeD-3d-LNs"/>
                                                 </constraints>
@@ -316,14 +315,22 @@ Please? 😇</string>
                                                     <action selector="shareWeatherInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zyh-xd-z5y"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xy5-ax-Zxh" userLabel="Info Button">
+                                                <rect key="frame" x="337" y="16" width="22" height="22"/>
+                                                <connections>
+                                                    <action selector="seeInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NJB-4P-Hb3"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="qCZ-Y0-dzb" firstAttribute="top" secondItem="1gL-dk-c41" secondAttribute="bottom" constant="32" id="0Jy-wu-kme"/>
+                                            <constraint firstItem="Xy5-ax-Zxh" firstAttribute="top" secondItem="Zjw-WY-KbN" secondAttribute="top" constant="16" id="1Cb-D4-gyu"/>
                                             <constraint firstItem="yks-2w-LJS" firstAttribute="top" secondItem="5N5-Hv-JW5" secondAttribute="bottom" constant="24" id="2hA-eS-Lyl"/>
                                             <constraint firstItem="1gL-dk-c41" firstAttribute="centerX" secondItem="Zjw-WY-KbN" secondAttribute="centerX" id="2sk-oP-als"/>
                                             <constraint firstItem="R7K-r3-bnT" firstAttribute="top" secondItem="qNj-2I-D9J" secondAttribute="bottom" constant="24" id="3Ku-OR-lF9"/>
                                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="qCZ-Y0-dzb" secondAttribute="bottom" constant="24" id="4uG-bg-70n"/>
+                                            <constraint firstAttribute="trailing" secondItem="Xy5-ax-Zxh" secondAttribute="trailing" constant="16" id="5QK-7W-b4U"/>
                                             <constraint firstAttribute="trailing" secondItem="5N5-Hv-JW5" secondAttribute="trailing" constant="16" id="FKu-Of-E8v"/>
                                             <constraint firstItem="1gL-dk-c41" firstAttribute="top" secondItem="xcC-OS-RU9" secondAttribute="bottom" constant="40" id="GkX-eu-Q4F"/>
                                             <constraint firstItem="xcC-OS-RU9" firstAttribute="centerY" secondItem="Zjw-WY-KbN" secondAttribute="centerY" multiplier="1.1" id="JxH-I6-bEA"/>
@@ -392,10 +399,10 @@ Please? 😇</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GII-B1-cPH" userLabel="Content View">
-                                <rect key="frame" x="0.0" y="44" width="375" height="685"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="719"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location N/A" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIn-rF-ex8">
-                                        <rect key="frame" x="136" y="0.0" width="104" height="30"/>
+                                        <rect key="frame" x="135.66666666666666" y="0.0" width="104" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="VA4-8j-XRF"/>
                                         </constraints>
@@ -407,7 +414,7 @@ Please? 😇</string>
                                         <rect key="frame" x="0.0" y="30" width="375" height="2"/>
                                     </imageView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="agE-L0-R4a">
-                                        <rect key="frame" x="0.0" y="32" width="375" height="653"/>
+                                        <rect key="frame" x="0.0" y="32" width="375" height="687"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableView>
                                 </subviews>

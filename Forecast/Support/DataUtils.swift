@@ -23,19 +23,19 @@ let firestoreDb = (UIApplication.shared.delegate as! AppDelegate).db
 func getWeatherInfo(controller: UIViewController, successSegue: String? = nil, refresh: Bool = false) {
 	let latestCoordinates = getUserDefaults(any: UserDefaultsKeys.lastestCoordinates) as? [String: Any] ?? [:]
 	let resourceUrl = getOpenWeatherMapApiForCurrentLocationEndpoint(weatherApiRequestType: .weather, latitude: latestCoordinates["lat"] as? String ?? "", longitude: latestCoordinates["lon"] as? String ?? "")
-	logRequestInfo(#function, resourceUrl)
+	//logRequestInfo(#function, resourceUrl)
 	
 	showActivityIndicator(true)
 	httpManager.get(url: resourceUrl) { response in
 		showActivityIndicator(false)
-		print("\(#function) [REQUEST]: \(response.response?.url?.absoluteString ?? "")")
+		//print("\(#function) [REQUEST]: \(response.response?.url?.absoluteString ?? "")")
 		
 		if let responseData = response.result.value {
-			print("\(#function) [RESPONSE]: \(responseData)")
+			//print("\(#function) [RESPONSE]: \(responseData)")
 			
 			let code = JSON(responseData)["cod"].intValue
 			switch code {
-			case 200:
+			case 200: // Valid response
 				let mainInfo = JSON(responseData)["main"]
 				let windInfo = JSON(responseData)["wind"]
 				let generalInfo = JSON(responseData)["sys"]
@@ -99,7 +99,7 @@ func getWeatherInfo(controller: UIViewController, successSegue: String? = nil, r
 					controller.performSegue(withIdentifier: successSegue, sender: nil)
 				}
 				break
-			case 400:
+			case 400: // Invalid latitude/longitude provided
 				controller.alert(message: "Unable to retrieve current location's weather information. Please try again later", title: "Error", customHandler: { _ in
 					if let successSegue = successSegue {
 						setUserDefaults(bool: true, key: UserDefaultsKeys.seenOnboarding)
@@ -134,19 +134,19 @@ func getWeatherInfo(controller: UIViewController, successSegue: String? = nil, r
 func getFiveDayForcecast(controller: UIViewController) {
 	let latestCoordinates = getUserDefaults(any: UserDefaultsKeys.lastestCoordinates) as? [String: Any] ?? [:]
 	let resourceUrl = getOpenWeatherMapApiForCurrentLocationEndpoint(weatherApiRequestType: .forecast, latitude: latestCoordinates["lat"] as? String ?? "", longitude: latestCoordinates["lon"] as? String ?? "")
-	logRequestInfo(#function, resourceUrl)
+	//logRequestInfo(#function, resourceUrl)
 	
 	showActivityIndicator(true)
 	httpManager.get(url: resourceUrl) { response in
 		showActivityIndicator(false)
-		print("\(#function) [REQUEST]: \(response.response?.url?.absoluteString ?? "")")
+		//print("\(#function) [REQUEST]: \(response.response?.url?.absoluteString ?? "")")
 		
 		if let responseData = response.result.value {
-			print("\(#function) [RESPONSE]: \(responseData)")
+			//print("\(#function) [RESPONSE]: \(responseData)")
 			
 			let code = JSON(responseData)["cod"].intValue
 			switch code {
-			case 200:
+			case 200: // Valid response
 				var forecastData = [[String: Any]]()
 				
 				let forecastList = JSON(responseData)["list"]

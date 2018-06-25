@@ -9,12 +9,13 @@
 import UIKit
 import CoreLocation
 
+// Singleton-type class meant to be the Location Manager for 'Forecast' as similar actions are performed throughout the application
 class ForecastLocationManager: NSObject {
 	
 	let locationManager = CLLocationManager()
 	
 	var controller: UIViewController!
-	var completionAction: (() -> Void)? = nil
+	var completionAction: (() -> Void)? = nil // Meant to pass custom function after a user's location coordinates has been retrieved
 	
 	var weatherInfoRequested = false
 	var canRequestWeatherInfo = true
@@ -51,11 +52,11 @@ class ForecastLocationManager: NSObject {
 				}
 				break
 			default:
-				locationManager.startUpdatingLocation()
+				locationManager.startUpdatingLocation() // Start checking for location if no issues critical problems
 				break
 			}
 		} else {
-			controller.alert(message: "", title: "Turn On Location Services to Allow \"Forecast\" to Determine Your Location")
+			controller.alert(message: "Turn on Location Services to allow \"Forecast\" to determine your Location.")
 		}
 	}
 	

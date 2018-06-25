@@ -30,9 +30,15 @@ class TodayViewController: UIViewController {
 		// Views Set Up
 		currentLocationButton.titleLabel?.numberOfLines = 0
 		
-		refreshTodayWeatherInfo()
+		refreshTodayWeatherInfo() // Set 'Today' information with already saved information if available
+		
+		// To get the latest information with the user's current location
+		forecastLocationManger.startUpdatingLocation(controller: self, completionAction: {
+			getWeatherInfo(controller: self, refresh: true)
+		})
+		
 		SwiftEventBus.onMainThread(self, name: EventBusParams.refreshTodayWeatherInfo) { result in
-			self.refreshTodayWeatherInfo()
+			self.refreshTodayWeatherInfo() // reload 'Today' information after getWeatherInfo route triggers call
 		}
 	}
 	
@@ -64,7 +70,7 @@ class TodayViewController: UIViewController {
 		let condition = WeatherCondition.evaluateWeatherCondition(weatherConditionIcon)
 		
 		// TODO: If Location Services Unavailable; OpenWeatherMapApi Unavailable, get model from Firebase; check sunrise/sunset to determine time instead of saved icon
-		if let condition = condition, let time = weatherConditionIcon.last {
+		if let condition = condition, let time = weatherConditionIcon.last { // time here refers to the d = day and n = n on the end of the weather status icon string returned from the OpenWeatherMap API
 			switch time {
 			case "d":
 				weatherStatusIndicatorImageView.image = Constants.WEATHER_CONDITION_IMAGE_DAY[condition]
@@ -84,6 +90,8 @@ class TodayViewController: UIViewController {
 		return directions[index]
 	}
 	
+	
+	// MARK :- Actions
 	@IBAction func setCurrentLocation(_ sender: Any) {
 		forecastLocationManger.startUpdatingLocation(controller: self, completionAction: {
 			getWeatherInfo(controller: self, refresh: true)
@@ -100,7 +108,6 @@ class TodayViewController: UIViewController {
 		
 		let activityViewController = UIActivityViewController(activityItems: [weatherStatusIndicatorImageView.image ?? UIImage(named: "SplashIcon")!, weatherConditionMessage], applicationActivities: nil)
 		activityViewController.popoverPresentationController?.sourceView = self.view
-		activityViewController.excludedActivityTypes = [.airDrop]
 		
 		activityViewController.completionWithItemsHandler = { activityType, completed, returnedItems, activityError in
 			if activityError != nil {
@@ -110,5 +117,9 @@ class TodayViewController: UIViewController {
 			completed ? self.alert(message: "Successfully Shared!") : self.alert(message: "Sharing Cancelled")
 		}
 		self.present(activityViewController, animated: true, completion: nil)
+	}
+	
+	@IBAction func seeInfo(_ sender: Any) {
+		self.alert(message: "Tap your location at any time to refresh.", title: "Help")
 	}
 }
