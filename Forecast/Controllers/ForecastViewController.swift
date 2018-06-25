@@ -72,10 +72,10 @@ class ForecastViewController: UIViewController {
 		for item in forecastObjects {
 			let timestamp = item["timestamp"] as? Double ?? -1
 			let temperature = item["temperature"] as? Double ?? -1
-			let weatherIcon = item["weather_status_icon"] as? String ?? ""
+			let weatherConditionIcon = item["weather_status_icon"] as? String ?? ""
 			let weatherCondition = item["weather_condition"] as? String ?? ""
 			
-			let forecast = Forecast(timestamp: timestamp, temperature: temperature, weatherStatusIcon: weatherIcon, weatherCondition: weatherCondition)
+			let forecast = Forecast(timestamp: timestamp, temperature: temperature, weatherConditionIcon: weatherConditionIcon, weatherCondition: weatherCondition)
 			
 			if !sectionNames.contains(forecast.weekday()) {
 				sectionNames.append(forecast.weekday())
@@ -135,21 +135,10 @@ extension ForecastViewController: UITableViewDataSource {
 				cell.bottomDividerImageView.isHidden = false
 			}
 			
-			let condition = WeatherCondition.evaluateWeatherCondition(forecast.weatherStatusIcon)
-			if let condition = condition, let time = forecast.weatherStatusIcon.last { // time here refers to the d = day and n = n on the end of the weather status icon string returned from the OpenWeatherMap API
-				switch time {
-				case "d":
-					cell.weatherConditionIndicatorImageView.image = Constants.WEATHER_CONDITION_IMAGE_DAY[condition]
-				case "n":
-					cell.weatherConditionIndicatorImageView.image = Constants.WEATHER_CONDITION_IMAGE_NIGHT[condition]
-				default:
-					break
-				}
-			}
-			
 			cell.forecastTimeLabel.text = forecast.getTimeOfDay()
 			cell.weatherConditionLabel.text = forecast.weatherCondition
 			cell.weatherConditionTemperatureLabel.text = "\(String(format: "%.0f", forecast.temperature))°C"
+			cell.weatherConditionIndicatorImageView.image = forecast.getWeatherStatusIcon()
 		}
 		
 		return cell
