@@ -19,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		// Override point for customization after application launch.
 		firebaseSetup()
 		
+		UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: "ProximaNova-Semibold", size: 10)!], for: .normal)
+		UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: "ProximaNova-Semibold", size: 10)!], for: .selected)
+		
 		if getUserDefaults(string: UserDefaultsKeys.deviceId) == nil {
 			if let deviceId = UIDevice.current.identifierForVendor?.uuidString {
 				setUserDefaults(string: deviceId, key: UserDefaultsKeys.deviceId)

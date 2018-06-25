@@ -54,10 +54,10 @@ class TodayViewController: UIViewController {
 		let windSpeed = todayWeatherInfo["wind_speed"] as? Double ?? -1
 		let precipitation = todayWeatherInfo["precipitation"] as? Double ?? 0.0
 		let windDirection = todayWeatherInfo["wind_direction"] as? Double ?? -1
-		pressureLabel.text = "\(pressure) hPa"
-		humidityLabel.text = "\(humidity)%"
-		precipitationLabel.text = "\(precipitation) mm"
-		windSpeedLabel.text = "\(windSpeed) km/h"
+		pressureLabel.text = "\(String(format: "%.0f", pressure)) hPa"
+		humidityLabel.text = "\(String(format: "%.0f", humidity))%"
+		precipitationLabel.text = "\(String(format: "%.1f", precipitation)) mm"
+		windSpeedLabel.text = "\(String(format: "%.2f", windSpeed)) km/h"
 		windDirectionLabel.text = "\(compassDirection(for: windDirection) ?? "N/A")"
 		
 		let weatherConditionIcon = todayWeatherInfo["weather_status_icon"] as? String ?? ""
